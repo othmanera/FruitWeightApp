@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Apples']
+
+roboflow:
+  workspace: peterjbloch-gmail-com
+  project: apple-vision
+  version: 9
+  license: MIT
+  url: https://universe.roboflow.com/peterjbloch-gmail-com/apple-vision/dataset/9
