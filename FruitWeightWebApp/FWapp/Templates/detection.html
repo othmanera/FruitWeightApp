@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<style>
+  body{
+    background-color: #27374D;
+  }
+ .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+
+    .custom-column {
+      padding: 10px;
+      margin-right: 10px;
+      background-color: #526D82;
+      border-radius: 10px;
+    }
+
+    .custom-column1 {
+      padding: 10px;
+      margin-right: 10px;
+      background-color: #526D82;
+      border-radius: 10px;
+      width: 76vh;
+    }
+
+    .customfield {
+      padding: 10px;
+      background-color: #9DB2BF;
+      border-radius: 10px;
+    }
+    .submitB{
+      background-color: #DDE6ED;
+    }
+    .ClearB{
+      background-color: #ff6868;
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+          <div class="column custom-column1">
+           <div class="drop-container">
+        <div class="drop-message">
+            <p>Drag & Drop files here or click to select</p>
+        </div>
+        <input type="file" id="fileInput" class="file-input">
+    </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+
+
+
+{% endblock %}

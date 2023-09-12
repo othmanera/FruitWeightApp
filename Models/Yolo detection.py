@@ -5,7 +5,7 @@ import math
 from Sort import *
 
 # calling the model we are going to use
-model = YOLO("CustomModel.pt")
+model = YOLO("YoloWeights/yolov8l.pt")
 
 # using cv2 to capture webcam/video footage
 # cap = cv2.VideoCapture(0) #webcam
@@ -14,7 +14,14 @@ model = YOLO("CustomModel.pt")
 # cap.set(4,720)
 cap = cv2.VideoCapture("../Data/videos/ApplesV2.mp4")  # video
 
-classNames = ["Apple"]
+classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat", "traffic light","fire hydrant",
+              "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra",
+              "giraffe","backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite",
+              "baseball bat","baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup", "fork",
+              "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut",
+              "cake", "chair", "sofa","pottedplant", "bed", "diningtable","toilet", "tvmonitor", "Laptop", "mouse", "remote", "keyboard",
+              "cell phone", "microwave", "oven","toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors", "teddy bear",
+              "hair driep", "toothbrush"]
 
 while True:
     success, img = cap.read()
