@@ -1,36 +1,45 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- Background Embedded Content -->
-  <div class="hero-background">
-    <!-- Add your embedded content here -->
-    <iframe src="https://my.spline.design/3dpathslines1copy-0e1bc8013a578afccd7d9f1ed79a689f/" frameborder="500px"></iframe>
+
+<style>
+/* Set the section to relative positioning to contain the iframe */
+.iframe-background {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style the container for the iframe */
+.iframe-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place it behind other content */
+}
+
+/* Style the iframe to cover the entire container */
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove iframe border */
+}
+
+</style>
+
+<section class="hero is-large iframe-background">
+ <div class="iframe-container">
+    <iframe src="https://my.spline.design/metallines-b76cdd61cbd5151b21776901391a34cf/" frameborder="0"></iframe>
   </div>
-<section class="hero is-fullheight has-background">
-
-
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-1">
-        Your Title Here
-      </h1>
-      <h2 class="subtitle is-3">
-        Your subtitle goes here.
-      </h2>
-    </div>
-
-    <!-- Centered Buttons -->
-    <div class="has-text-centered">
-      <a class="button is-primary is-rounded">
-        Button 1
-      </a>
-      <a class="button is-secondary is-rounded">
-        Button 2
-      </a>
-    </div>
+    <p class="title">
+      Large hero
+    </p>
+    <p class="subtitle">
+      Large subtitle
+    </p>
   </div>
 </section>
-
-
 
 {% endblock %}
