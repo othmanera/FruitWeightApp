@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<head>
 
 <style>
   body{
@@ -45,21 +45,17 @@
 </head>
 <body>
   <section class="section">
-    <div class="container">
-      <div class="columns">
-          <div class="column custom-column1">
-           <div class="drop-container">
-        <div class="drop-message">
-            <p>Drag & Drop files here or click to select</p>
-        </div>
-        <input type="file" id="fileInput" class="file-input">
-    </div>
-        </div>
-      </div>
-    </div>
+
+    <h2>Upload a File</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+
 
 </section>
-
+</body>
 
 
 
