@@ -1,5 +1,5 @@
-# What is FruitWeight ?
-FruitWeight is an application that can detect fruits on trees (Apples for now ) and count the total number present, in order to calculate their weight at first , then estimate a total price of the detected product.
+# What is PlateScan ?
+PlateScan is an application that can detect vehicls on the road or anywhere and detect their license plates in order to extract the license plate information for further use.
 # How is this useful ?
 FruitWeight can provide a big help to people looking to estimate their total income based on the products they have (In a farm for example). Instead of basing the price estimation on previous years, which can change significantly over a year and be misleading, they can use the app to have better insights and estimations , giving them a better vision of their business and maybe even plan their next business plan.
 # How does it work ?
